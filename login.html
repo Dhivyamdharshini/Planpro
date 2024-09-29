@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Login page</title>
+        <link rel="stylesheet" href="login.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <h1><b>Login Page</h1></b>
+        <form>
+            <div class="input-box">
+            
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+           
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
+            </div>
+    
+            <button type="submit" class="btn" value="Login"><b>Login</button></b>
+        </form>
+        </div>
+    
+        <script type="text/javascript">
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+    
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+    
+                if (username === 'dhivya' && password === 'ldc') {
+                    
+                   window.location.href = "index.html"; // Replace with your next page URL
+                } else {
+                    alert('Username or password incorrect. Please try again.');
+                }
+            });
+        </script>
+</body>
+</html>

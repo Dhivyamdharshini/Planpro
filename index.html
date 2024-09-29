@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Planpro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="navbar">
+         <h1>Planpro</h1>
+         <h2 id="logout" onclick="logout()">Logout</h2>
+        </div>
+        <div class="container">
+            <div class="plan-container">
+            <h2>Web Development using wordpress</h2><br>
+            <h5>Scheduling Date:  28/09/2024</h5><br>
+            <p>PlanPro is a web-based application designed to help users manage their schedules and plans efficiently. Developed using HTML, CSS, and JavaScript, PlanPro provides an intuitive interface that allows users to add and delete tasks or events easily.</p>
+            <br><button onclick="deletebutton(event)">Delete</button>
+            </div>
+        </div>
+        <div class="popup-overlay"></div>
+         
+         <div class="popup-box">
+            <h2>BENDING TASK</h2>
+            <form>
+                <input type="text" placeholder="Course Name" id="course-name-input">
+                <input type="text" placeholder="Date" id="date-input">
+                <textarea placeholder="Short Description" id="description-input"></textarea>
+                <button id="add">ADD</button>
+                <button id="cancel-popup">CANCEL</button>
+            </form>
+        </div>
+    
+        <button class="add-button" id="add-popup-button">+</button>
+        <script src="script.js"> </script>
+    </body>
+</html>
